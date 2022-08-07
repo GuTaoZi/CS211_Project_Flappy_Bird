@@ -1,0 +1,735 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16552 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 344.148 ; gain = 102.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:23]
+	Parameter gap bound to: 250 - type: integer 
+	Parameter tubewidth bound to: 6'b111100 
+INFO: [Synth 8-638] synthesizing module 'clk_div' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v:23]
+	Parameter div bound to: 24'b000111101000010010000000 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_inst' of module 'clk_wiz_0' requires 5 connections, but only 3 given [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:71]
+INFO: [Synth 8-638] synthesizing module 'random_gen' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/random_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'random_gen' (3#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/random_gen.v:23]
+INFO: [Synth 8-638] synthesizing module 'segment' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v:23]
+INFO: [Synth 8-638] synthesizing module 'converter' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:23]
+	Parameter _0 bound to: 8'b00111111 
+	Parameter _1 bound to: 8'b00000110 
+	Parameter _2 bound to: 8'b01011011 
+	Parameter _3 bound to: 8'b01001111 
+	Parameter _4 bound to: 8'b01100110 
+	Parameter _5 bound to: 8'b01101101 
+	Parameter _6 bound to: 8'b01111101 
+	Parameter _7 bound to: 8'b00000111 
+	Parameter _8 bound to: 8'b01111111 
+	Parameter _9 bound to: 8'b01101111 
+	Parameter _E bound to: 8'b01111001 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:40]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:76]
+INFO: [Synth 8-256] done synthesizing module 'converter' (4#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'segment' (5#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v:23]
+INFO: [Synth 8-638] synthesizing module 'bird_pos' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/bird_pos.v:1]
+	Parameter v0 bound to: 16'b0000000100101100 
+	Parameter g bound to: 10'b0000010100 
+INFO: [Synth 8-256] done synthesizing module 'bird_pos' (6#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/bird_pos.v:1]
+INFO: [Synth 8-638] synthesizing module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:1]
+	Parameter tubewidth bound to: 6'b111100 
+	Parameter gap bound to: 8'b10010110 
+	Parameter groundlevel bound to: 9'b100011000 
+INFO: [Synth 8-638] synthesizing module 'is_bird' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_bird.v:1]
+INFO: [Synth 8-256] done synthesizing module 'is_bird' (7#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_bird.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (11) of module 'is_bird' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:16]
+WARNING: [Synth 8-689] width (10) of port connection 'y' does not match port width (11) of module 'is_bird' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:16]
+WARNING: [Synth 8-689] width (10) of port connection 'y_bird' does not match port width (11) of module 'is_bird' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:16]
+INFO: [Synth 8-638] synthesizing module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:1]
+	Parameter tubewidth bound to: 6'b111100 
+	Parameter gap bound to: 9'b011111010 
+INFO: [Synth 8-256] done synthesizing module 'is_tube' (8#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:1]
+WARNING: [Synth 8-689] width (10) of port connection 'x_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:17]
+WARNING: [Synth 8-689] width (10) of port connection 'y_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:17]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:17]
+WARNING: [Synth 8-689] width (10) of port connection 'y' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:17]
+WARNING: [Synth 8-689] width (10) of port connection 'x_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:18]
+WARNING: [Synth 8-689] width (10) of port connection 'y_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:18]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:18]
+WARNING: [Synth 8-689] width (10) of port connection 'y' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:18]
+WARNING: [Synth 8-689] width (32) of port connection 'x_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:19]
+WARNING: [Synth 8-689] width (10) of port connection 'y_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:19]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:19]
+WARNING: [Synth 8-689] width (10) of port connection 'y' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:19]
+WARNING: [Synth 8-689] width (32) of port connection 'x_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:20]
+WARNING: [Synth 8-689] width (10) of port connection 'y_tube' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:20]
+WARNING: [Synth 8-689] width (10) of port connection 'x' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:20]
+WARNING: [Synth 8-689] width (10) of port connection 'y' does not match port width (11) of module 'is_tube' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:20]
+INFO: [Synth 8-638] synthesizing module 'Bird_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/Bird_png_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Bird_png' (9#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/Bird_png_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'TubeBody_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/TubeBody_png_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'TubeBody_png' (10#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/TubeBody_png_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (6) of module 'TubeBody_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:27]
+INFO: [Synth 8-638] synthesizing module 'TubeHead_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/TubeHead_png_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'TubeHead_png' (11#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/TubeHead_png_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'addra' does not match port width (6) of module 'TubeHead_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:28]
+INFO: [Synth 8-638] synthesizing module 'BG_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/BG_png_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'BG_png' (12#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/realtime/BG_png_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (15) of module 'BG_png' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:29]
+WARNING: [Synth 8-3848] Net pos_tube_body in module/entity display does not have driver. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-256] done synthesizing module 'display' (13#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'x_tube' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y_tube0' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y_tube1' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y_tube2' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y_tube3' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'x' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+WARNING: [Synth 8-689] width (11) of port connection 'y_bird' does not match port width (10) of module 'display' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+INFO: [Synth 8-256] done synthesizing module 'Main' (14#1) [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:23]
+WARNING: [Synth 8-3331] design bird_pos has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 395.855 ; gain = 154.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 395.855 ; gain = 154.082
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp5/BG_png_in_context.xdc] for cell 'Display/bgimg'
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp5/BG_png_in_context.xdc] for cell 'Display/bgimg'
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp6/Bird_png_in_context.xdc] for cell 'Display/birdimg'
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp6/Bird_png_in_context.xdc] for cell 'Display/birdimg'
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp7/TubeHead_png_in_context.xdc] for cell 'Display/thimg'
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp7/TubeHead_png_in_context.xdc] for cell 'Display/thimg'
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp8/TubeBody_png_in_context.xdc] for cell 'Display/tbimg'
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp8/TubeBody_png_in_context.xdc] for cell 'Display/tbimg'
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp9/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp9/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[3]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[2]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[1]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[0]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[0]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[1]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[2]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'crashflag[3]'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'restart_IBUF'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:63]
+WARNING: [Vivado 12-507] No nets matched 'reso_IBUF'. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc:64]
+Finished Parsing XDC File [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/constrs_1/new/xdcc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 738.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 738.477 ; gain = 496.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 738.477 ; gain = 496.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp9/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/.Xil/Vivado-9748-FIRST-MICROSOFT/dcp9/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Display/bgimg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Display/birdimg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Display/tbimg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Display/thimg. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 738.477 ; gain = 496.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "t" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v:32]
+INFO: [Synth 8-5545] ROM "seg1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v:39]
+INFO: [Synth 8-5544] ROM "float_y" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:56]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:51]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:28]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:144]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:201]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:199]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:201]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:199]
+INFO: [Synth 8-5544] ROM "velocity" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element score_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:137]
+WARNING: [Synth 8-6014] Unused sequential element hc_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:177]
+WARNING: [Synth 8-6014] Unused sequential element vc_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:189]
+WARNING: [Synth 8-327] inferring latch for variable 'seg1_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'seg2_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'seg3_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:65]
+WARNING: [Synth 8-327] inferring latch for variable 'seg4_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'R_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:212]
+WARNING: [Synth 8-327] inferring latch for variable 'G_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:212]
+WARNING: [Synth 8-327] inferring latch for variable 'B_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:212]
+WARNING: [Synth 8-327] inferring latch for variable 'interval_reg' [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:206]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 738.477 ; gain = 496.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 5     
+	   3 Input     16 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 9     
+	   4 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 16    
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 27    
+	  11 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     13 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 5     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 2     
++---Multipliers : 
+	                 5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module random_gen 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module converter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 3     
+Module segment 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 3     
+Module bird_pos 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module is_bird 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module is_tube 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "t" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v:32]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v:39]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v:13]
+WARNING: [Synth 8-3936] Found unconnected internal register 'pos_bg_reg' and it is trimmed from '16' to '15' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:29]
+WARNING: [Synth 8-3936] Found unconnected internal register 'pos_tube_head_reg' and it is trimmed from '8' to '6' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v:28]
+DSP Report: Generating DSP pos_bird2, operation Mode is: A*(B:0x3c).
+DSP Report: operator pos_bird2 is absorbed into DSP pos_bird2.
+DSP Report: Generating DSP pos_bird_reg, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffff9b).
+DSP Report: register pos_bird_reg is absorbed into DSP pos_bird_reg.
+DSP Report: operator pos_bird0 is absorbed into DSP pos_bird_reg.
+DSP Report: Generating DSP pos_bg_reg, operation Mode is: C+A*(B:0xa0).
+DSP Report: register pos_bg_reg is absorbed into DSP pos_bg_reg.
+DSP Report: operator pos_bg0 is absorbed into DSP pos_bg_reg.
+DSP Report: operator pos_bg1 is absorbed into DSP pos_bg_reg.
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_tube0_reg' and it is trimmed from '11' to '10' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:153]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_tube1_reg' and it is trimmed from '11' to '10' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:153]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_tube2_reg' and it is trimmed from '11' to '10' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:154]
+WARNING: [Synth 8-3936] Found unconnected internal register 'y_tube3_reg' and it is trimmed from '11' to '10' bits. [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:155]
+WARNING: [Synth 8-6014] Unused sequential element hc_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:177]
+WARNING: [Synth 8-6014] Unused sequential element vc_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:189]
+WARNING: [Synth 8-6014] Unused sequential element score_reg was removed.  [E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v:137]
+DSP Report: Generating DSP y_tube31, operation Mode is: A*B.
+DSP Report: operator y_tube31 is absorbed into DSP y_tube31.
+WARNING: [Synth 8-3331] design bird_pos has unconnected port clk
+WARNING: [Synth 8-3331] design bird_pos has unconnected port sc_h[0]
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv1/seg4_reg[0]' (LD) to 'seg_uut/conv1/seg4_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seg_uut/\conv1/seg4_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seg_uut/\conv1/seg4_reg[2] )
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv1/seg4_reg[3]' (LD) to 'seg_uut/conv1/seg4_reg[4]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv1/seg4_reg[4]' (LD) to 'seg_uut/conv1/seg4_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv1/seg4_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv1/seg1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv1/seg2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv1/seg3_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv1/seg4_reg[7] )
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv2/seg4_reg[0]' (LD) to 'seg_uut/conv2/seg4_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seg_uut/\conv2/seg4_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seg_uut/\conv2/seg4_reg[2] )
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv2/seg4_reg[3]' (LD) to 'seg_uut/conv2/seg4_reg[4]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/conv2/seg4_reg[4]' (LD) to 'seg_uut/conv2/seg4_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv2/seg4_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv2/seg1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv2/seg2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv2/seg3_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\conv2/seg4_reg[7] )
+INFO: [Synth 8-3886] merging instance 'interval_reg[0]' (LD) to 'interval_reg[8]'
+INFO: [Synth 8-3886] merging instance 'interval_reg[1]' (LD) to 'interval_reg[8]'
+INFO: [Synth 8-3886] merging instance 'interval_reg[2]' (LD) to 'interval_reg[4]'
+INFO: [Synth 8-3886] merging instance 'interval_reg[3]' (LD) to 'interval_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\interval_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\interval_reg[8] )
+INFO: [Synth 8-3886] merging instance 'seg_uut/cho_reg[0]' (FD) to 'seg_uut/cho_reg[4]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/cho_reg[1]' (FD) to 'seg_uut/cho_reg[5]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/cho_reg[2]' (FD) to 'seg_uut/cho_reg[6]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/cho_reg[3]' (FD) to 'seg_uut/cho_reg[7]'
+INFO: [Synth 8-3886] merging instance 'seg_uut/rseg_reg[7]' (FD) to 'seg_uut/lseg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_uut/\lseg_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg4_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg4_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg4_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg4_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg4_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg4_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg4_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg4_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg4_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg4_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (lseg_reg[7]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (interval_reg[8]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (interval_reg[7]) is unused and will be removed from module Main.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (bp/\v_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (v_reg[0]) is unused and will be removed from module bird_pos.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg1_reg[0]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg2_reg[0]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv1/seg3_reg[0]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg1_reg[0]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg2_reg[0]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[6]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[5]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[4]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[3]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[2]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[1]) is unused and will be removed from module segment.
+WARNING: [Synth 8-3332] Sequential element (conv2/seg3_reg[0]) is unused and will be removed from module segment.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 738.477 ; gain = 496.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|display     | A*(B:0x3c)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display     | PCIN+(A:0x0):B+(C:0xffffffffff9b) | 30     | 10     | 8      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|display     | C+A*(B:0xa0)                      | 15     | 8      | 8      | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|Main        | A*B                               | 16     | 5      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out1' to pin 'clk_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out2' to pin 'clk_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 799.188 ; gain = 557.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 849.758 ; gain = 607.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Display/tbimg  has unconnected pin addra[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_inst has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |Bird_png      |         1|
+|3     |TubeBody_png  |         1|
+|4     |TubeHead_png  |         1|
+|5     |BG_png        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |BG_png       |     1|
+|2     |Bird_png     |     1|
+|3     |TubeBody_png |     1|
+|4     |TubeHead_png |     1|
+|5     |clk_wiz_0    |     1|
+|6     |BUFG         |     2|
+|7     |CARRY4       |   190|
+|8     |DSP48E1      |     2|
+|9     |DSP48E1_1    |     1|
+|10    |DSP48E1_2    |     1|
+|11    |LUT1         |   140|
+|12    |LUT2         |   265|
+|13    |LUT3         |   158|
+|14    |LUT4         |   222|
+|15    |LUT5         |    95|
+|16    |LUT6         |   205|
+|17    |FDPE         |     5|
+|18    |FDRE         |   224|
+|19    |FDSE         |     8|
+|20    |LD           |     3|
+|21    |LDC          |    12|
+|22    |IBUF         |     8|
+|23    |OBUF         |    41|
++------+-------------+------+
+
+Report Instance Areas: 
++------+----------+------------+------+
+|      |Instance  |Module      |Cells |
++------+----------+------------+------+
+|1     |top       |            |  1649|
+|2     |  cd      |clk_div     |    67|
+|3     |  Display |display     |   674|
+|4     |    ib    |is_bird     |    64|
+|5     |    it0   |is_tube     |   101|
+|6     |    it1   |is_tube_1   |   101|
+|7     |    it2   |is_tube_2   |   100|
+|8     |    it3   |is_tube_3   |   130|
+|9     |  bp      |bird_pos    |   204|
+|10    |  rg      |random_gen  |    11|
+|11    |  seg_uut |segment     |   239|
+|12    |    conv1 |converter   |    49|
+|13    |    conv2 |converter_0 |    40|
++------+----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 7 critical warnings and 88 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 863.195 ; gain = 278.801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 863.195 ; gain = 621.422
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 217 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LD => LDCE: 3 instances
+  LDC => LDCE: 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 132 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 863.195 ; gain = 632.543
+INFO: [Common 17-1381] The checkpoint 'E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 863.195 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  1 19:51:14 2022...

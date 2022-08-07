@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Aug  1 17:40:36 2022
+# Process ID: 4520
+# Current directory: E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
+# Log file: E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/impl_1/Main.vdi
+# Journal file: E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace

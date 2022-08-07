@@ -1,0 +1,23 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/conv_sim.v,1659539624,verilog,,,,conv_sim,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/rdm_sim.v,1659540131,verilog,,,,rdm_sim,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/seg_sim.v,1659540799,verilog,,,,seg_sim,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/BG_png/sim/BG_png.v,1659096782,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/TubeHead_png/sim/TubeHead_png.v,,BG_png,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/Bird_png/sim/Bird_png.v,1659096860,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,Bird_png,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/TubeBody_png/sim/TubeBody_png.v,1659097147,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/Bird_png/sim/Bird_png.v,,TubeBody_png,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/TubeHead_png/sim/TubeHead_png.v,1659097049,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/TubeBody_png/sim/TubeBody_png.v,,TubeHead_png,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1659345995,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/bird_pos.v,,clk_wiz_0,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1659345994,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/Main.v,1659354622,verilog,,,,Main,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/bird_pos.v,1659354604,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v,,bird_pos,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/clk_div.v,1659540405,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/cd_sim.v,,clk_div,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v,1659342122,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v,,converter,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/display.v,1659351726,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_bird.v,,display,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_bird.v,1659354204,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v,,is_bird,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/is_tube.v,1659354557,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/random_gen.v,,is_tube,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/random_gen.v,1659099178,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/rdm_sim.v,,random_gen,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v,1659540913,verilog,,E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/seg_sim.v,,segment,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
