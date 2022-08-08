@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/converter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module converter
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sources_1/new/segment.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module segment
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Lab_DL/Flappy_Bird_demo/project_1/project_1.srcs/sim_1/new/seg_sim.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module seg_sim
