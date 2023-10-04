@@ -1,3 +1,5 @@
+## [README(English version)](https://gutaozi.github.io/2022/11/06/CS211_Project_Report_Flappy_Bird/)
+
 # CS211 数字逻辑 (H) 项目设计报告 Flappy Bird
 
 ![](https://www.android-digital.de/wp-content/uploads/flappy_bird-600x337.jpg)
